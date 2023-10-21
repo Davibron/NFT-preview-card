@@ -22,18 +22,56 @@ main {
   border-radius: 13px;
   background-color: hsl(216, 50%, 16%);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 20px 20px 5px, rgba(0, 0, 0, 0.07) 0px 20px 20px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  position: absolute;
 }
 
 .equilibrium {
-  width: 200px; 
+  width: 200px;
   margin: 15px;
   border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.equilibrium:hover .eye {
+  display: inline;
+}
+
+.equilibrium:hover .empty {
+  display: block;
+}
+
+.equilibrium-img {
+  width: 200px;
+  border-radius: 7px;
+  display: block;
+}
+
+.eye {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  display: none;
+}
+
+.empty {
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  border-radius: 7px;
+  background-color: hsla(178, 100%, 50%, 0.4);
 }
 
 h3 {
   margin: 0px 15px 5px 15px;
   font-size: 18px;
   font-stretch: condensed;
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 p {
@@ -93,14 +131,19 @@ hr {
     color: hsl(215, 51%, 70%);
     margin-right: 3px;
   }
+
+  .span-4:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
 }
 
 .attribution { 
   font-size: 11px;
   text-align: center; 
-  position: relative;
-  top: 15vh;
-  left: 20%;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
 }
 
 .attribution a { 
