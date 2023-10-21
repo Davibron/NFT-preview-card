@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: Outfit, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+}
+
+main {
+  width: 230px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 20px 20px 5px, rgba(0, 0, 0, 0.07) 0px 20px 20px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.equilibrium {
+  width: 200px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+h3 {
+  margin: 0px 15px 5px 15px;
+  font-size: 18px;
+  font-stretch: condensed;
+}
+
+p {
+  font-size: 12px;
+  margin: 5px 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.rate {
+  width: 200px;
+  font-size: 12px;
+  margin: 10px 15px;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: space-between;
+}
+
+.span-1, .span-2 {
+  display: flex;
+  align-items: center;
+}
+.span-1 svg, .span-2 svg {
+  margin-right: 3px;
+}
+
+.span-1 {
+  color: hsl(178, 100%, 50%);
+}
+
+.span-2 {
+  justify-content: end;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  width: 200px;
+  margin: 5px 15px 0px;
+  border-color: hsla(215, 51%, 70%, 0.1);
+}
+
+.profile {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0px 15px 5px;
+}
+.profile img {
+  width: 25px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.profile .span-3 {
+  color: hsl(215, 51%, 70%);
+  margin-right: 3px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 15vh;
+  left: 20%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
